@@ -1,0 +1,17 @@
+[project]
+name = "unit-converter"
+version = "0.1.0"
+authors=[
+    {name = "Pavel Simanov", email = "pashvel.dev@gmail.com"},
+]
+description = "A simple unit converter API built with FastAPI. Supports weight, length, and temperature conversions."
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard-no-fastapi-cloud-cli]>=0.136.3",
+    "uvicorn>=0.48.0",
+]
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+    "ruff>=0.15.17",
+]
